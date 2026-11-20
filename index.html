@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نيل: مساحة تجريبية تنشر فيها الجمعيات احتياجات مشاريع الشباب، وتجد الجهات الداعمة مساهمات واضحة يمكن متابعتها.">
+  <meta name="color-scheme" content="light">
+  <title>نيل — شراكات مشاريع الشباب</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/landing.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body class="landing-body">
+  <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
+
+  <div class="demo-ribbon" role="note">
+    <span data-icon="info" data-icon-size="15"></span>
+    <span>نسخة تجريبية محلية: الأسماء والبيانات افتراضية، ولا تُرسل طلبات أو بريد إلى أي جهة.</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand-mark" href="./index.html" aria-label="نيل — الصفحة الرئيسية">
+        <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="12" fill="#F7EAF0" stroke="#842D49" stroke-width="1.2"></rect>
+          <path d="M11 28c4.4-10.4 11.4-15.6 18-16.4" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="m11 28 5.1-1.1M11 28l1-5" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+          <circle cx="29" cy="11.6" r="2.2" fill="#9B3654"></circle>
+        </svg>
+        <span class="brand-word"><strong>نيل</strong><span>شراكات مشاريع الشباب</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link" href="#problem">المشكلة</a>
+        <a class="nav-link" href="#flow">كيف تعمل</a>
+        <a class="nav-link" href="#example">مثال المشروع</a>
+        <a class="nav-link" href="#agent">مساعد نيل</a>
+        <a class="nav-link" href="#faq">الأسئلة</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline btn-sm" href="./demo.html?role=supporter">تجربة الجهة الداعمة</a>
+        <a class="btn btn-primary btn-sm" href="./demo.html?role=association">ابدأ كجمعية</a>
+        <button type="button" class="btn btn-ghost btn-icon menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="فتح القائمة">
+          <span data-icon="menu" data-icon-size="20"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="container mobile-nav-inner">
+        <a class="nav-link" href="#problem">المشكلة</a>
+        <a class="nav-link" href="#flow">كيف تعمل</a>
+        <a class="nav-link" href="#example">مثال المشروع</a>
+        <a class="nav-link" href="#agent">مساعد نيل</a>
+        <a class="nav-link" href="#faq">الأسئلة</a>
+        <a class="btn btn-primary btn-sm" href="./demo.html">اختر دورك التجريبي</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span data-icon="route" data-icon-size="15"></span> من وصف المشروع إلى مساهمة واضحة</span>
+          <h1>الجمعية تعرف ما ينقصها.<br><span class="highlight">والجهة الداعمة تعرف أين تساهم.</span></h1>
+          <p class="hero-lead">
+            نيل مساحة تجريبية تنشر فيها الجمعيات مشاريع الشباب وتفصّل احتياجاتها: تدريب، أجهزة، فرص عملية، أو تكاليف تشغيل.
+            وتجد الجهات الداعمة فرصًا مناسبة مع سبب واضح لكل اقتراح، ومسار متابعة من أول تواصل حتى الاتفاق.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="./demo.html?role=association">
+              <span data-icon="building-2" data-icon-size="18"></span> جرّب لوحة الجمعية
+            </a>
+            <a class="btn btn-outline btn-lg" href="./demo.html?role=supporter">
+              <span data-icon="handshake" data-icon-size="18"></span> جرّب لوحة الجهة الداعمة
+            </a>
+          </div>
+          <ul class="hero-points">
+            <li><span data-icon="check-circle" data-icon-size="16"></span> احتياجات منفصلة لكل مشروع</li>
+            <li><span data-icon="check-circle" data-icon-size="16"></span> ترشيحات مع سبب مسجل</li>
+            <li><span data-icon="check-circle" data-icon-size="16"></span> متابعة الجزئي والمتبقي بدقة</li>
+          </ul>
+        </div>
+
+        <div class="hero-preview" aria-label="معاينة بطاقة مشروع تجريبي">
+          <article class="preview-card">
+            <div class="preview-top">
+              <div class="preview-org">
+                <span class="avatar is-round">مغ</span>
+                <div>
+                  <strong>جمعية مهارات الغد</strong>
+                  <small class="muted">الرياض · مشروع منشور تجريبيًا</small>
+                </div>
+              </div>
+              <span class="chip is-success"><span data-icon="badge-check" data-icon-size="14"></span> منشور</span>
+            </div>
+            <h2>تأهيل 100 شاب وشابة للمهارات الرقمية</h2>
+            <div class="preview-meta">
+              <span class="chip">المهارات الرقمية</span>
+              <span class="chip">4 أنواع دعم</span>
+              <span class="chip is-warning">تغطية جزئية</span>
+            </div>
+            <div class="needs-preview">
+              <div class="need-preview">
+                <span class="need-preview-icon"><span data-icon="cpu" data-icon-size="18"></span></span>
+                <div><strong>20 جهاز حاسوب</strong><small>تم الاتفاق على 10 · تبقّى 10</small></div>
+              </div>
+              <div class="need-preview">
+                <span class="need-preview-icon"><span data-icon="graduation-cap" data-icon-size="18"></span></span>
+                <div><strong>4 مدربين</strong><small>قيد التواصل مع معهد تدريب</small></div>
+              </div>
+              <div class="need-preview">
+                <span class="need-preview-icon"><span data-icon="briefcase" data-icon-size="18"></span></span>
+                <div><strong>10 فرص تدريب عملي</strong><small>لم تحصل على دعم بعد</small></div>
+              </div>
+              <div class="need-preview">
+                <span class="need-preview-icon"><span data-icon="wallet" data-icon-size="18"></span></span>
+                <div><strong>تكاليف التشغيل</strong><small>بانتظار جهة تغطي جزءًا منها</small></div>
+              </div>
+            </div>
+            <div class="preview-footer">
+              <span class="participants"><span data-icon="users" data-icon-size="16"></span> 100 مشارك مستهدف</span>
+              <span class="demo-tag">بيانات افتراضية</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="problem">
+      <div class="container">
+        <div class="section-head is-center">
+          <span class="section-kicker">لماذا نيل؟</span>
+          <h2 class="section-title">المشروع لا يحتاج مموّلًا واحدًا لكل شيء</h2>
+          <p class="section-lead">غالبًا يكون الاحتياج مركّبًا: قاعة موجودة، لكن الأجهزة ناقصة، والمدربون غير مكتملين، وفرص التطبيق قليلة. نيل يفصل هذه الاحتياجات حتى يستطيع كل شريك أن يقدّم الجزء الذي يستطيعه.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span class="icon-tile"><span data-icon="layers" data-icon-size="20"></span></span>
+            <h3>احتياج واحد لا يوصف بجملة</h3>
+            <p>الجهاز غير المدرب، والمدرب غير فرصة التدريب العملي. كل نوع دعم له كمية وحالة ومتبقٍ خاص.</p>
+          </article>
+          <article class="problem-card">
+            <span class="icon-tile"><span data-icon="message-square" data-icon-size="20"></span></span>
+            <h3>التواصل يضيع بين القنوات</h3>
+            <p>طلب في البريد، ووعد في مكالمة، وملاحظة في ملف. نيل يجمع الطلب والحالة والرسائل في مسار واحد قابل للمراجعة.</p>
+          </article>
+          <article class="problem-card">
+            <span class="icon-tile"><span data-icon="circle-half" data-icon-size="20"></span></span>
+            <h3>الدعم الجزئي لا يظهر بوضوح</h3>
+            <p>اتفاق على 10 أجهزة من أصل 20 يجب أن يظهر كما هو: تغطية جزئية، وليس احتياجًا مغطى بالكامل.</p>
+          </article>
+        </div>
+        <p class="problem-summary">هذه هي التجربة التي نركز على تبسيطها وتطويرها في نيل، دون ادعاء حصرية ميزات لم تُختبر مقابل جهات أخرى.</p>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">كيف تعمل المنصة</span>
+          <h2 class="section-title">مسار واحد للطرفين، ومساعد لا يتخذ القرار</h2>
+          <p class="section-lead">اختر الدور لترى الخطوات التي تظهر له. كل خطوة مرتبطة ببيانات العرض التجريبية ويمكن تجربتها داخل اللوحة.</p>
+        </div>
+
+        <div class="flow-shell">
+          <div class="flow-tabs" role="tablist" aria-label="مسارات الاستخدام">
+            <button type="button" class="flow-tab" role="tab" id="tab-association" aria-controls="panel-association" aria-selected="true" data-flow-tab="association">مسار الجمعية</button>
+            <button type="button" class="flow-tab" role="tab" id="tab-supporter" aria-controls="panel-supporter" aria-selected="false" data-flow-tab="supporter">مسار الجهة الداعمة</button>
+            <button type="button" class="flow-tab" role="tab" id="tab-agent" aria-controls="panel-agent" aria-selected="false" data-flow-tab="agent">دور مساعد نيل</button>
+          </div>
+          <div class="flow-panels">
+            <div class="flow-panel" id="panel-association" role="tabpanel" aria-labelledby="tab-association" data-flow-panel="association">
+              <div class="flow-steps">
+                <article class="flow-step"><h3>اكتب المشروع واحتياجاته</h3><p>حدد ما هو متاح بالفعل، وما تحتاجه المشروع بالكمية والوحدة والأولوية.</p></article>
+                <article class="flow-step"><h3>راجع الجهات المقترحة</h3><p>تظهر الجهة مع سبب من ملفها: نوع الدعم، المجال، المنطقة، والقدرة المعلنة.</p></article>
+                <article class="flow-step"><h3>أرسل طلب تعاون تجريبيًا</h3><p>عدّل المسودة واعتمدها. لا يُرسل بريد فعلي، لكن الحالة تظهر في صندوق الجهة.</p></article>
+                <article class="flow-step"><h3>تابع الجزئي والمتبقي</h3><p>سجل الاتفاق على 10 من 20 جهازًا، ليبقى المتبقي واضحًا لكل طرف.</p></article>
+              </div>
+            </div>
+            <div class="flow-panel" id="panel-supporter" role="tabpanel" aria-labelledby="tab-supporter" data-flow-panel="supporter" hidden>
+              <div class="flow-steps">
+                <article class="flow-step"><h3>حدد ما تستطيع تقديمه</h3><p>نوع الدعم، المجالات، المناطق، والقدرة المتاحة في ملف الجهة.</p></article>
+                <article class="flow-step"><h3>اكتشف المشاريع المناسبة</h3><p>افلتر بحسب نوع المساهمة أو المدينة أو المجال، أو راجع الاقتراحات المفسرة.</p></article>
+                <article class="flow-step"><h3>افهم الاحتياج والمتبقي</h3><p>لا تكتفِ بوصف المشروع: راجع كل احتياج، وما تم الاتفاق عليه، وما تبقّى.</p></article>
+                <article class="flow-step"><h3>سجل عرض مساهمة</h3><p>ساهم بجزء محدد. يبقى العرض غير مؤكد حتى تراجعه الجمعية داخل المحاكاة.</p></article>
+              </div>
+            </div>
+            <div class="flow-panel" id="panel-agent" role="tabpanel" aria-labelledby="tab-agent" data-flow-panel="agent" hidden>
+              <div class="flow-steps">
+                <article class="flow-step"><h3>يقرأ وصف المشروع</h3><p>يستخرج احتياجات منفصلة وكميات تقريبية من النص الذي كتبته الجمعية.</p></article>
+                <article class="flow-step"><h3>يقترح لا يعتمد</h3><p>يمكن قبول اقتراح واحد ورفض آخر. المرفوض لا يدخل المشروع إطلاقًا.</p></article>
+                <article class="flow-step"><h3>يشرح سبب الترشيح</h3><p>يعرض عوامل الملاءمة من بيانات الجهة، دون وعود أو ترتيب غامض.</p></article>
+                <article class="flow-step"><h3>يجهّز مسودة طلب فقط</h3><p>مسودة قابلة للتعديل. لا يرسل رسالة، ولا يوافق على عرض، ولا يضمن شراكة.</p></article>
+              </div>
+            </div>
+          </div>
+          <div class="section-head" style="margin-block-start:18px">
+            <p class="muted micro">ملاحظة: مساعد نيل في هذه النسخة تجريبي ومحلي، ويعتمد على قواعد ثابتة وبيانات افتراضية، وليس نموذجًا ذكيًا حقيقيًا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-warm" id="example">
+      <div class="container example-grid">
+        <div class="example-copy">
+          <span class="section-kicker">مثال قابل للتجربة</span>
+          <h2 class="section-title">مشروع تدريب 100 شاب وشابة</h2>
+          <p>لدى الجمعية قاعة مجهزة جزئيًا، لكن المشروع يحتاج أربعة أنواع دعم. هذا الفصل يجعل الاتفاق واقعيًا: قد تقدم شركة تقنية الأجهزة، ويقدم معهد التدريب المدربين، وتقدم جهة توظيف فرص التدريب العملي.</p>
+          <p>في سيناريو العرض، توافق شركة مدى التقنية على <strong>10 أجهزة من أصل 20</strong>. تبقى البطاقة توضح أن الاحتياج جزئي، ولا تتحول إلى «مغطى» إلا عند اكتمال الكمية أو إغلاق الاتفاق صراحة.</p>
+          <div class="note-strip is-warning">
+            <span data-icon="info" data-icon-size="18"></span>
+            <span>هذا رقم مستهدف وتعهد وصفي داخل المحاكاة، وليس تحويلًا ماليًا أو نتيجة متحققة.</span>
+          </div>
+          <div class="hero-actions" style="margin-block-start:22px">
+            <a class="btn btn-primary" href="./demo.html?role=association">افتح السيناريو كجمعية</a>
+            <a class="btn btn-outline" href="./demo.html?role=supporter">افتحه كجهة داعمة</a>
+          </div>
+        </div>
+
+        <div class="example-shell">
+          <div class="example-head">
+            <span class="eyebrow"><span data-icon="folder-open" data-icon-size="14"></span> PROJ-001 · مثال افتراضي</span>
+            <h3>ما الذي تحتاجه مشاريعنا؟</h3>
+            <p>كل احتياج له حالة مستقلة، والمتبقي محسوب من الكميات المتفق عليها.</p>
+          </div>
+          <div class="example-body">
+            <div class="example-available">
+              <span data-icon="check-circle" data-icon-size="17"></span>
+              <span><strong>متاح بالفعل:</strong> قاعة تدريب في الرياض، وإنترنت أساسي، وتنسيق مع مركز الشباب.</span>
+            </div>
+            <div class="need-demo-list">
+              <div class="need-demo is-covered">
+                <span class="need-preview-icon"><span data-icon="cpu" data-icon-size="18"></span></span>
+                <div><strong>20 جهاز حاسوب</strong><small>تم الاتفاق على 10 أجهزة</small></div>
+                <span class="demo-state">مغطى جزئيًا · تبقّى 10</span>
+              </div>
+              <div class="need-demo">
+                <span class="need-preview-icon"><span data-icon="graduation-cap" data-icon-size="18"></span></span>
+                <div><strong>4 مدربين</strong><small>قيد التواصل مع معهد تدريب</small></div>
+                <span class="demo-state">قيد التواصل</span>
+              </div>
+              <div class="need-demo">
+                <span class="need-preview-icon"><span data-icon="briefcase" data-icon-size="18"></span></span>
+                <div><strong>10 فرص تدريب عملي</strong><small>لم تحصل على دعم بعد</small></div>
+                <span class="demo-state">غير مغطى</span>
+              </div>
+              <div class="need-demo">
+                <span class="need-preview-icon"><span data-icon="wallet" data-icon-size="18"></span></span>
+                <div><strong>تكاليف تشغيل</strong><small>بانتظار جهة تغطي جزءًا</small></div>
+                <span class="demo-state">غير مغطى</span>
+              </div>
+            </div>
+          </div>
+          <div class="example-footer">
+            <div class="example-summary"><strong>3 من 4</strong><span>احتياجات لم تكتمل بعد</span></div>
+            <span class="demo-tag">بيانات العرض</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head is-center">
+          <span class="section-kicker">أنواع الدعم</span>
+          <h2 class="section-title">ليس كل دعم مبلغًا ماليًا</h2>
+          <p class="section-lead">قد تكون المساهمة الأكثر تأثيرًا جهازًا، أو مدربًا، أو فرصة تدريب عملي. نيل يعرض أنواع الدعم التي يحتاجها المشروع بوضوح.</p>
+        </div>
+        <div class="support-grid">
+          <article class="support-card"><span class="icon-tile"><span data-icon="graduation-cap" data-icon-size="20"></span></span><h3>تدريب</h3><p>مدربون وورش ومحتوى تأهيلي بكميات ومواعيد قابلة للمتابعة.</p></article>
+          <article class="support-card"><span class="icon-tile"><span data-icon="cpu" data-icon-size="20"></span></span><h3>أجهزة وخدمات تقنية</h3><p>أجهزة حاسوب وبرامج ودعم تقني للمشروع.</p></article>
+          <article class="support-card"><span class="icon-tile"><span data-icon="wallet" data-icon-size="20"></span></span><h3>تكاليف تشغيل</h3><p>تعهد وصفي بتغطية جزء من مصاريف التشغيل، دون دفع فعلي.</p></article>
+          <article class="support-card"><span class="icon-tile"><span data-icon="briefcase" data-icon-size="20"></span></span><h3>فرص تدريب عملي</h3><p>فرص تطبيقية ومهنية للشباب داخل الجهة الداعمة أو مع شركائها.</p></article>
+          <article class="support-card"><span class="icon-tile"><span data-icon="lightbulb" data-icon-size="20"></span></span><h3>خبرة واستشارات</h3><p>مراجعة المناهج أو الإرشاد أو تصميم أدوات القياس.</p></article>
+          <article class="support-card"><span class="icon-tile"><span data-icon="wrench" data-icon-size="20"></span></span><h3>خدمات وبرامج</h3><p>برامج وأدوات وخدمات مساندة مرتبطة باحتياج محدد.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agent">
+      <div class="container agent-grid">
+        <div class="agent-flow">
+          <span class="section-kicker">مساعد نيل الذكي (تجريبي)</span>
+          <h2 class="section-title">يقترح، ويشرح، ويجهّز مسودة. والقرار يبقى لك.</h2>
+          <p class="section-lead">المساعد لا يوافق على عرض ولا يرسل رسالة ولا يعد بشراكة. وظيفته تقليل العمل المتكرر ومساعدة الجمعية على رؤية الاحتياجات والجهات المناسبة.</p>
+          <div class="agent-step"><span class="agent-step-num">1</span><div><strong>يحلل وصف المشروع</strong><span>يستخرج احتياجات منفصلة وكميات ومواعيد تقريبية.</span></div></div>
+          <div class="agent-step"><span class="agent-step-num">2</span><div><strong>يقترح ترشيحات مع سبب</strong><span>يعتمد على نوع الدعم والمجال والمنطقة والقدرة المعلنة.</span></div></div>
+          <div class="agent-step"><span class="agent-step-num">3</span><div><strong>يجهّز مسودة طلب</strong><span>يمكن تعديلها قبل اعتمادها، ولا تُرسل خارج المحاكاة.</span></div></div>
+          <div class="agent-step"><span class="agent-step-num">4</span><div><strong>يتابع المتبقي</strong><span>يعرض ما تم الاتفاق عليه وما زال المشروع يحتاجه.</span></div></div>
+          <div class="note-strip" style="margin-block-start:20px">
+            <span data-icon="shield-check" data-icon-size="18"></span>
+            <span>مراجعة الإنسان مطلوبة دائمًا. كل مخرجات المساعد تظهر كمسودة قابلة للتعديل أو الرفض.</span>
+          </div>
+        </div>
+
+        <div class="agent-demo">
+          <div class="agent-demo-top">
+            <div><span class="eyebrow"><span data-icon="sparkles" data-icon-size="14"></span> معاينة تجريبية</span><strong>تحليل مشروع «تأهيل 100 شاب وشابة»</strong></div>
+            <span class="chip is-info">محلي</span>
+          </div>
+          <div class="agent-log">
+            <div class="agent-log-item"><span data-icon="check-circle" data-icon-size="17"></span><span>تمت قراءة الوصف واستخراج 4 احتياجات محتملة.</span></div>
+            <div class="agent-log-item"><span data-icon="cpu" data-icon-size="17"></span><span>احتياج الأجهزة: 20 جهازًا. مطابق لوصف المشروع.</span></div>
+            <div class="agent-log-item"><span data-icon="graduation-cap" data-icon-size="17"></span><span>احتياج التدريب: 4 مدربين. مطابق لوصف المشروع.</span></div>
+          </div>
+          <div class="agent-partner">
+            <div class="agent-partner-head"><strong>شركة مدى التقنية</strong><span class="chip is-success">ملاءمة عالية</span></div>
+            <p class="agent-reason">تقدم أجهزة وخدمات تقنية، وتعمل في الرياض، لديه قدرة معلنة على دعم 10 أجهزة في الدورة الحالية.</p>
+            <div class="cluster">
+              <span class="chip">أجهزة</span><span class="chip">الرياض</span><span class="chip">قدرة 10</span>
+            </div>
+          </div>
+          <div class="note-strip is-warning" style="margin-block-start:16px">
+            <span data-icon="file-text" data-icon-size="18"></span>
+            <span>مسودة الطلب جاهزة للمراجعة، ولم تُرسل أي رسالة.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head is-center">
+          <span class="section-kicker">لمن؟</span>
+          <h2 class="section-title">لوحتان متصلتان ببيانات واحدة</h2>
+          <p class="section-lead">كل تغيير يقوم به طرف يظهر للطرف الآخر داخل المتصفح نفسه، لأن البيانات محفوظة محليًا في هذه النسخة التجريبية.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card is-brand">
+            <span class="audience-icon"><span data-icon="building-2" data-icon-size="24"></span></span>
+            <h3>للجمعية</h3>
+            <p>انشر المشروع، فصّل الاحتياجات، واعرف من يستطيع المساهمة وبأي جزء.</p>
+            <ul>
+              <li><span data-icon="check" data-icon-size="16"></span> إدارة المشاريع والاحتياجات</li>
+              <li><span data-icon="check" data-icon-size="16"></span> ترشيحات جهات مع سبب</li>
+              <li><span data-icon="check" data-icon-size="16"></span> طلبات ورسائل وحالات</li>
+              <li><span data-icon="check" data-icon-size="16"></span> متابعة الاتفاقات الجزئية</li>
+              <li><span data-icon="check" data-icon-size="16"></span> نتائج الشباب وقصة المشروع</li>
+            </ul>
+            <a class="btn btn-primary" href="./demo.html?role=association">ابدأ كجمعية <span data-icon="arrow-left" data-icon-size="16"></span></a>
+          </article>
+          <article class="audience-card">
+            <span class="audience-icon"><span data-icon="handshake" data-icon-size="24"></span></span>
+            <h3>للجهة الداعمة</h3>
+            <p>حدد ما تستطيع تقديمه، واكتشف المشاريع المناسبة، وساهم بالجزء الذي يناسبك.</p>
+            <ul>
+              <li><span data-icon="check" data-icon-size="16"></span> ملف اهتمامات وقدرات</li>
+              <li><span data-icon="check" data-icon-size="16"></span> اكتشاف وفلاتر حقيقية</li>
+              <li><span data-icon="check" data-icon-size="16"></span> اقتراحات مع تفسير</li>
+              <li><span data-icon="check" data-icon-size="16"></span> مساهمات وحالات متابعة</li>
+              <li><span data-icon="check" data-icon-size="16"></span> أثر مرتبط بالمشروع</li>
+            </ul>
+            <a class="btn btn-outline" href="./demo.html?role=supporter">ابدأ كجهة داعمة <span data-icon="arrow-left" data-icon-size="16"></span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head is-center">
+          <span class="section-kicker">ماذا توضح المحاكاة؟</span>
+          <h2 class="section-title">أرقام قابلة للتتبع، لا شعارات</h2>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-item"><span class="metric-icon"><span data-icon="folder-kanban" data-icon-size="20"></span></span><h3>مشاريع</h3><p>بطاقات مشروع قابلة للتصفية والنشر التجريبي.</p></div>
+          <div class="metric-item"><span class="metric-icon"><span data-icon="list-checks" data-icon-size="20"></span></span><h3>احتياجات</h3><p>كل احتياج له كمية ووحدة وحالة ومتبقٍ مستقل.</p></div>
+          <div class="metric-item"><span class="metric-icon"><span data-icon="inbox" data-icon-size="20"></span></span><h3>طلبات</h3><p>حالة الطلب تظهر في لوحة الجمعية ولوحة الجهة الداعمة.</p></div>
+          <div class="metric-item"><span class="metric-icon"><span data-icon="chart-no-axes-column" data-icon-size="20"></span></span><h3>نتائج</h3><p>المستهدف منفصل عن المنجز، والمصدر موضح دائمًا.</p></div>
+        </div>
+        <p class="metrics-note">جميع الأرقام والجهات في هذه الصفحة أمثلة افتراضية لأغراض العرض، وليست نتائج إنتاجية أو شراكات حقيقية.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head is-center">
+          <span class="section-kicker">أسئلة متوقعة</span>
+          <h2 class="section-title">قبل أن تجرب</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>هل هذه منصة إنتاجية؟</summary>
+            <p>لا. هذه محاكاة واجهة تعمل بالكامل في المتصفح. لا توجد مصادقة أو قاعدة بيانات مركزية أو مراسلات حقيقية أو مدفوعات.</p>
+          </details>
+          <details class="faq-item">
+            <summary>هل تُرسل طلبات التعاون فعليًا؟</summary>
+            <p>لا. زر الإرسال يسجل الحالة داخل المحاكاة فقط. تظهر رسالة صريحة بأنه لم يُرسل بريد أو إشعار خارجي.</p>
+          </details>
+          <details class="faq-item">
+            <summary>هل مساعد نيل نموذج ذكاء اصطناعي حقيقي؟</summary>
+            <p>ليس في هذه النسخة. هو مساعد تجريبي محلي يعتمد على قواعد ثابتة وبيانات العرض. لا يتصل بأي API ولا يرسل أي شيء.</p>
+          </details>
+          <details class="faq-item">
+            <summary>هل يمكنني العودة لاحقًا؟</summary>
+            <p>نعم، حتى تمسح بيانات المتصفح أو تضغط «إعادة ضبط العرض». الحفظ محلي في هذا المتصفح فقط، ولا يتزامن بين الأجهزة.</p>
+          </details>
+          <details class="faq-item">
+            <summary>كيف أرى أثر قرار الطرف الآخر؟</summary>
+            <p>بدّل الدور من الشريط العلوي أو من صفحة اختيار الدور. استخدم نفس سيناريو الطلب لترى تغيّر الحالة والاتفاق الجزئي في اللوحة الأخرى.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="cta-band">
+          <div class="cta-inner">
+            <h2>جرّب الرحلة الكاملة في 3 إلى 5 دقائق</h2>
+            <p>افتح مشروع «تأهيل 100 شاب وشابة»، راجع المساعد، ثم بدّل إلى الجهة الداعمة ووافق على 10 من أصل 20 جهازًا. عند العودة ستجد المتبقي محدثًا.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="./demo.html">اختر دور العرض</a>
+              <a class="btn btn-outline btn-lg" href="#flow">راجع خطوات التجربة</a>
+            </div>
+            <p class="muted micro" style="margin-block-start:16px">لا مدفوعات · لا بريد · لا ذكاء اصطناعي خارجي · بيانات محلية قابلة لإعادة الضبط</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand-mark" href="./index.html" aria-label="نيل — الصفحة الرئيسية">
+            <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="12" fill="#F7EAF0" stroke="#842D49" stroke-width="1.2"></rect>
+              <path d="M11 28c4.4-10.4 11.4-15.6 18-16.4" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+              <path d="m11 28 5.1-1.1M11 28l1-5" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+              <circle cx="29" cy="11.6" r="2.2" fill="#9B3654"></circle>
+            </svg>
+            <span class="brand-word"><strong>نيل</strong><span>شراكات مشاريع الشباب</span></span>
+          </a>
+          <p>محاكاة واجهة عربية لربط احتياجات مشاريع الشباب بالجهات الداعمة، مع مسار تعاون واضح وبيانات محلية قابلة لإعادة الضبط.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>المنصة</h3>
+            <a href="#problem">المشكلة</a>
+            <a href="#flow">كيف تعمل</a>
+            <a href="#agent">مساعد نيل</a>
+          </div>
+          <div class="footer-col">
+            <h3>التجربة</h3>
+            <a href="./demo.html">اختيار الدور</a>
+            <a href="./demo.html?role=association">لوحة الجمعية</a>
+            <a href="./demo.html?role=supporter">لوحة الجهة الداعمة</a>
+          </div>
+          <div class="footer-col">
+            <h3>الوضوح</h3>
+            <a href="#faq">الأسئلة المتوقعة</a>
+            <a href="./README.md">ملف README</a>
+            <a href="./docs/DEMO_SCRIPT.md">سيناريو العرض</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="demo-tag">نسخة تجريبية</span>
+        <span>نيل © 2026 · جميع البيانات افتراضية ولا تمثل جهات أو نتائج حقيقية.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/js/landing.js"></script>
+</body>
+</html>

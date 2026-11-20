@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="اختر دورك في محاكاة نيل: لوحة جمعية أو لوحة جهة داعمة، ببيانات محلية قابلة لإعادة الضبط.">
+  <meta name="color-scheme" content="light">
+  <title>اختر دورك — نيل</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/landing.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body class="demo-page">
+  <a class="skip-link" href="#demo-main">تجاوز إلى اختيار الدور</a>
+
+  <div class="demo-ribbon" role="note">
+    <span data-icon="info" data-icon-size="15"></span>
+    <span>محاكاة تجريبية: لا مصادقة حقيقية. اختيار الدور يحدد فقط واجهة العرض داخل هذا المتصفح.</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand-mark" href="./index.html" aria-label="العودة إلى الصفحة الرئيسية">
+        <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="12" fill="#F7EAF0" stroke="#842D49" stroke-width="1.2"></rect>
+          <path d="M11 28c4.4-10.4 11.4-15.6 18-16.4" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="m11 28 5.1-1.1M11 28l1-5" fill="none" stroke="#842D49" stroke-width="2.2" stroke-linecap="round"></path>
+          <circle cx="29" cy="11.6" r="2.2" fill="#9B3654"></circle>
+        </svg>
+        <span class="brand-word"><strong>نيل</strong><span>شراكات مشاريع الشباب</span></span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn-ghost btn-sm" href="./index.html"><span data-icon="home" data-icon-size="16"></span> الصفحة الرئيسية</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="demo-main">
+    <div class="container">
+      <div class="demo-page-head">
+        <span class="eyebrow"><span data-icon="route" data-icon-size="15"></span> جلسة تجريبية محلية</span>
+        <h1>اختر الدور الذي تريد تجربته</h1>
+        <p>لوحتان مترابطتان: قرار تسجله في إحداهما يظهر في الأخرى بعد تبديل الدور، لأن البيانات محفوظة في هذا المتصفح فقط. لا توجد حسابات أو صلاحيات إنتاجية.</p>
+      </div>
+
+      <div class="demo-continue" id="continue-session" hidden>
+        <p id="continue-session-text">لديك جلسة محفوظة في هذا المتصفح.</p>
+        <a class="btn btn-primary btn-sm" href="./app.html" id="continue-session-link">متابعة الجلسة الحالية</a>
+      </div>
+
+      <div class="role-choice-grid">
+        <article class="role-choice-card is-association" data-role-card="association">
+          <span class="role-choice-icon"><span data-icon="building-2" data-icon-size="26"></span></span>
+          <div class="role-choice-meta">
+            <span class="chip is-brand">دور الجمعية</span>
+            <span class="chip">ORG-001</span>
+          </div>
+          <h2>جمعية مهارات الغد</h2>
+          <p>انشر مشروع «تأهيل 100 شاب وشابة»، راجع الاحتياجات، واطلب مساعدة الجهات المناسبة مع سبب واضح لكل ترشيح.</p>
+          <ul>
+            <li><span data-icon="check" data-icon-size="16"></span> مشاريع ومسودات واحتياجات منفصلة</li>
+            <li><span data-icon="check" data-icon-size="16"></span> مساعد نيل التجريبي ومصادر الترشيح</li>
+            <li><span data-icon="check" data-icon-size="16"></span> طلبات ورسائل وشراكات جزئية</li>
+            <li><span data-icon="check" data-icon-size="16"></span> نتائج شباب وقصة مشروع</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-start-role="association">
+            ادخل كجمعية <span data-icon="arrow-left" data-icon-size="16"></span>
+          </button>
+        </article>
+
+        <article class="role-choice-card is-supporter" data-role-card="supporter">
+          <span class="role-choice-icon"><span data-icon="handshake" data-icon-size="26"></span></span>
+          <div class="role-choice-meta">
+            <span class="chip is-info">دور الجهة الداعمة</span>
+            <span class="chip">SUP-002</span>
+          </div>
+          <h2>شركة مدى التقنية</h2>
+          <p>حدد اهتمامات جهتك، اكتشف المشاريع المناسبة، وافهم الاحتياج والمتبقي قبل تسجيل عرض مساهمة تجريبي.</p>
+          <ul>
+            <li><span data-icon="check" data-icon-size="16"></span> ملف اهتمامات ومناطق وقدرات</li>
+            <li><span data-icon="check" data-icon-size="16"></span> اكتشاف وفلاتر واقتراحات مفسرة</li>
+            <li><span data-icon="check" data-icon-size="16"></span> طلبات ومساهمات ومحادثات</li>
+            <li><span data-icon="check" data-icon-size="16"></span> أثر مرتبط بمساهماتك</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-start-role="supporter">
+            ادخل كجهة داعمة <span data-icon="arrow-left" data-icon-size="16"></span>
+          </button>
+        </article>
+      </div>
+
+      <div class="demo-page-foot">
+        <span>الحفظ محلي في هذا المتصفح فقط — لا تزامن بين الأجهزة.</span>
+        <span class="demo-tag">بيانات افتراضية</span>
+        <button type="button" data-reset-demo>إعادة ضبط بيانات العرض</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal-root"></div>
+  <script type="module" src="./assets/js/demo.js"></script>
+</body>
+</html>
