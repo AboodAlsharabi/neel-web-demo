@@ -575,9 +575,4 @@
   .flow-steps {
     grid-template-columns: 1fr;
   }
-
-  .menu-panel {
-    inset-inline-start: auto;
-    inset-inline-end: 0;
-  }
 }

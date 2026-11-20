@@ -2215,6 +2215,7 @@
 }
 
 .notif-menu .menu-panel {
+  inset-inline-start: auto;
   inset-inline-end: 0;
 }
 
